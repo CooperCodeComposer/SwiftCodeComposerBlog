@@ -65,11 +65,11 @@ enum Category {
 }
 
 class Effect {
-    var stereo: Channels
+    var channels: Channels
     var category: Category
     
-    init(stereo: Channels, category: Category) {
-        self.stereo = stereo
+    init(channels: Channels, category: Category) {
+        self.channels = channels
         self.category = category
     }
 }
