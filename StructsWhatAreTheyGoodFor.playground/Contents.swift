@@ -51,11 +51,6 @@ let guitarEq = Equalizer(bass: eqBass, mid: eqMid, treble: eqTreble)
 
 // An Effects superclass might be setup like this
 
-enum Channels {
-    case Mono
-    case Stereo
-}
-
 enum Category {
     case Eq
     case Compressor
@@ -65,11 +60,13 @@ enum Category {
 }
 
 class Effect {
-    var channels: Channels
+    var inputs: Int
+    var outputs: Int
     var category: Category
     
-    init(channels: Channels, category: Category) {
-        self.channels = channels
+    init(inputs: Int, outputs: Int, category: Category) {
+        self.inputs = inputs
+        self.outputs = outputs
         self.category = category
     }
 }
