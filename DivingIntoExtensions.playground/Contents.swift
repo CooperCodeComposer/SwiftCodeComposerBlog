@@ -1,6 +1,6 @@
 // www.SwiftCodeComposer.com
 
-// Diving into Swift Extensions 
+// Diving into Swift Extensions
 // by Alistair Cooper
 
 //***************************************************
@@ -22,7 +22,7 @@ extension Double {
 10.0.isEven // true
 9.9.isEven  // false
 
-// can also use the extension property in closures, for example
+// could then use the computed property in closures, for example
 
 var myArray: [Double] = [9.8, 4.0, 7.6, 9.1, 8.0]
 
