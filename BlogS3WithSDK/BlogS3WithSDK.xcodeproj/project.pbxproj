@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAC00BFA9C4A16BC12553F2 /* Pods_BlogS3WithSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579E12595E21A00B4DE391E4 /* Pods_BlogS3WithSDK.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		ED2945A01D4FE53E009E162C /* acTaylor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED29459F1D4FE53E009E162C /* acTaylor.jpg */; };
+		EDDFE9611D4EB4D700B973DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDFE9601D4EB4D700B973DD /* AppDelegate.swift */; };
+		EDDFE9631D4EB4D700B973DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDFE9621D4EB4D700B973DD /* ViewController.swift */; };
+		EDDFE9661D4EB4D700B973DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDFE9641D4EB4D700B973DD /* Main.storyboard */; };
+		EDDFE9681D4EB4D700B973DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDFE9671D4EB4D700B973DD /* Assets.xcassets */; };
+		EDDFE96B1D4EB4D700B973DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDFE9691D4EB4D700B973DD /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4AB04363B71D971A1B875CDF /* Pods-BlogS3WithSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogS3WithSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlogS3WithSDK/Pods-BlogS3WithSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		579E12595E21A00B4DE391E4 /* Pods_BlogS3WithSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlogS3WithSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC31BBBFB78CA30D668E0B5E /* Pods-BlogS3WithSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogS3WithSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlogS3WithSDK/Pods-BlogS3WithSDK.release.xcconfig"; sourceTree = "<group>"; };
+		ED29459F1D4FE53E009E162C /* acTaylor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = acTaylor.jpg; sourceTree = "<group>"; };
+		ED7EE9351D4FD942005DD95D /* AWSCore-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AWSCore-dummy.m"; sourceTree = "<group>"; };
+		ED7EE9361D4FD942005DD95D /* AWSCore-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSCore-prefix.pch"; sourceTree = "<group>"; };
+		ED7EE9371D4FD942005DD95D /* AWSCore-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSCore-umbrella.h"; sourceTree = "<group>"; };
+		ED7EE9381D4FD942005DD95D /* AWSCore.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = AWSCore.modulemap; sourceTree = "<group>"; };
+		ED7EE9391D4FD942005DD95D /* AWSCore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AWSCore.xcconfig; sourceTree = "<group>"; };
+		ED7EE93A1D4FD942005DD95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7EE93C1D4FD942005DD95D /* AWSS3-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AWSS3-dummy.m"; sourceTree = "<group>"; };
+		ED7EE93D1D4FD942005DD95D /* AWSS3-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSS3-prefix.pch"; sourceTree = "<group>"; };
+		ED7EE93E1D4FD942005DD95D /* AWSS3-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSS3-umbrella.h"; sourceTree = "<group>"; };
+		ED7EE93F1D4FD942005DD95D /* AWSS3.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = AWSS3.modulemap; sourceTree = "<group>"; };
+		ED7EE9401D4FD942005DD95D /* AWSS3.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AWSS3.xcconfig; sourceTree = "<group>"; };
+		ED7EE9411D4FD942005DD95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7EE9431D4FD942005DD95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED7EE9441D4FD942005DD95D /* Pods-BlogS3WithSDK-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-BlogS3WithSDK-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED7EE9451D4FD942005DD95D /* Pods-BlogS3WithSDK-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-BlogS3WithSDK-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED7EE9461D4FD942005DD95D /* Pods-BlogS3WithSDK-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlogS3WithSDK-dummy.m"; sourceTree = "<group>"; };
+		ED7EE9471D4FD942005DD95D /* Pods-BlogS3WithSDK-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-BlogS3WithSDK-frameworks.sh"; sourceTree = "<group>"; };
+		ED7EE9481D4FD942005DD95D /* Pods-BlogS3WithSDK-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-BlogS3WithSDK-resources.sh"; sourceTree = "<group>"; };
+		ED7EE9491D4FD942005DD95D /* Pods-BlogS3WithSDK-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-BlogS3WithSDK-umbrella.h"; sourceTree = "<group>"; };
+		ED7EE94A1D4FD942005DD95D /* Pods-BlogS3WithSDK.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-BlogS3WithSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7EE94B1D4FD942005DD95D /* Pods-BlogS3WithSDK.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BlogS3WithSDK.modulemap"; sourceTree = "<group>"; };
+		ED7EE94C1D4FD942005DD95D /* Pods-BlogS3WithSDK.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-BlogS3WithSDK.release.xcconfig"; sourceTree = "<group>"; };
+		EDDFE95D1D4EB4D700B973DD /* BlogS3WithSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlogS3WithSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDFE9601D4EB4D700B973DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDDFE9621D4EB4D700B973DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDDFE9651D4EB4D700B973DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDDFE9671D4EB4D700B973DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDDFE96A1D4EB4D700B973DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDDFE96C1D4EB4D700B973DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDDFE95A1D4EB4D700B973DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAC00BFA9C4A16BC12553F2 /* Pods_BlogS3WithSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90CB365D06D28F926F1A1D95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AB04363B71D971A1B875CDF /* Pods-BlogS3WithSDK.debug.xcconfig */,
+				DC31BBBFB78CA30D668E0B5E /* Pods-BlogS3WithSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CECFAC665C21D9BE5EFA861E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EE9331D4FD942005DD95D /* Target Support Files */,
+				579E12595E21A00B4DE391E4 /* Pods_BlogS3WithSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED2945A11D4FE542009E162C /* images */ = {
+			isa = PBXGroup;
+			children = (
+				ED29459F1D4FE53E009E162C /* acTaylor.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		ED7EE9331D4FD942005DD95D /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EE9341D4FD942005DD95D /* AWSCore */,
+				ED7EE93B1D4FD942005DD95D /* AWSS3 */,
+				ED7EE9421D4FD942005DD95D /* Pods-BlogS3WithSDK */,
+			);
+			name = "Target Support Files";
+			path = "Pods/Target Support Files";
+			sourceTree = "<group>";
+		};
+		ED7EE9341D4FD942005DD95D /* AWSCore */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EE9351D4FD942005DD95D /* AWSCore-dummy.m */,
+				ED7EE9361D4FD942005DD95D /* AWSCore-prefix.pch */,
+				ED7EE9371D4FD942005DD95D /* AWSCore-umbrella.h */,
+				ED7EE9381D4FD942005DD95D /* AWSCore.modulemap */,
+				ED7EE9391D4FD942005DD95D /* AWSCore.xcconfig */,
+				ED7EE93A1D4FD942005DD95D /* Info.plist */,
+			);
+			path = AWSCore;
+			sourceTree = "<group>";
+		};
+		ED7EE93B1D4FD942005DD95D /* AWSS3 */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EE93C1D4FD942005DD95D /* AWSS3-dummy.m */,
+				ED7EE93D1D4FD942005DD95D /* AWSS3-prefix.pch */,
+				ED7EE93E1D4FD942005DD95D /* AWSS3-umbrella.h */,
+				ED7EE93F1D4FD942005DD95D /* AWSS3.modulemap */,
+				ED7EE9401D4FD942005DD95D /* AWSS3.xcconfig */,
+				ED7EE9411D4FD942005DD95D /* Info.plist */,
+			);
+			path = AWSS3;
+			sourceTree = "<group>";
+		};
+		ED7EE9421D4FD942005DD95D /* Pods-BlogS3WithSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ED7EE9431D4FD942005DD95D /* Info.plist */,
+				ED7EE9441D4FD942005DD95D /* Pods-BlogS3WithSDK-acknowledgements.markdown */,
+				ED7EE9451D4FD942005DD95D /* Pods-BlogS3WithSDK-acknowledgements.plist */,
+				ED7EE9461D4FD942005DD95D /* Pods-BlogS3WithSDK-dummy.m */,
+				ED7EE9471D4FD942005DD95D /* Pods-BlogS3WithSDK-frameworks.sh */,
+				ED7EE9481D4FD942005DD95D /* Pods-BlogS3WithSDK-resources.sh */,
+				ED7EE9491D4FD942005DD95D /* Pods-BlogS3WithSDK-umbrella.h */,
+				ED7EE94A1D4FD942005DD95D /* Pods-BlogS3WithSDK.debug.xcconfig */,
+				ED7EE94B1D4FD942005DD95D /* Pods-BlogS3WithSDK.modulemap */,
+				ED7EE94C1D4FD942005DD95D /* Pods-BlogS3WithSDK.release.xcconfig */,
+			);
+			path = "Pods-BlogS3WithSDK";
+			sourceTree = "<group>";
+		};
+		EDDFE9541D4EB4D600B973DD = {
+			isa = PBXGroup;
+			children = (
+				EDDFE95F1D4EB4D700B973DD /* BlogS3WithSDK */,
+				EDDFE95E1D4EB4D700B973DD /* Products */,
+				90CB365D06D28F926F1A1D95 /* Pods */,
+				CECFAC665C21D9BE5EFA861E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDDFE95E1D4EB4D700B973DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDDFE95D1D4EB4D700B973DD /* BlogS3WithSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDDFE95F1D4EB4D700B973DD /* BlogS3WithSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EDDFE9601D4EB4D700B973DD /* AppDelegate.swift */,
+				EDDFE9621D4EB4D700B973DD /* ViewController.swift */,
+				EDDFE9641D4EB4D700B973DD /* Main.storyboard */,
+				EDDFE9671D4EB4D700B973DD /* Assets.xcassets */,
+				EDDFE9691D4EB4D700B973DD /* LaunchScreen.storyboard */,
+				EDDFE96C1D4EB4D700B973DD /* Info.plist */,
+				ED2945A11D4FE542009E162C /* images */,
+			);
+			path = BlogS3WithSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDDFE95C1D4EB4D700B973DD /* BlogS3WithSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDDFE96F1D4EB4D700B973DD /* Build configuration list for PBXNativeTarget "BlogS3WithSDK" */;
+			buildPhases = (
+				7FEA48B42E7C1444325A406B /* [CP] Check Pods Manifest.lock */,
+				EDDFE9591D4EB4D700B973DD /* Sources */,
+				EDDFE95A1D4EB4D700B973DD /* Frameworks */,
+				EDDFE95B1D4EB4D700B973DD /* Resources */,
+				26AA70BA9829142B0DDBD982 /* [CP] Embed Pods Frameworks */,
+				9E647BF8A836090C72307DE7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlogS3WithSDK;
+			productName = BlogS3WithSDK;
+			productReference = EDDFE95D1D4EB4D700B973DD /* BlogS3WithSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDDFE9551D4EB4D600B973DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alistair Cooper";
+				TargetAttributes = {
+					EDDFE95C1D4EB4D700B973DD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = EDDFE9581D4EB4D600B973DD /* Build configuration list for PBXProject "BlogS3WithSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDDFE9541D4EB4D600B973DD;
+			productRefGroup = EDDFE95E1D4EB4D700B973DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDDFE95C1D4EB4D700B973DD /* BlogS3WithSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDDFE95B1D4EB4D700B973DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDFE96B1D4EB4D700B973DD /* LaunchScreen.storyboard in Resources */,
+				EDDFE9681D4EB4D700B973DD /* Assets.xcassets in Resources */,
+				ED2945A01D4FE53E009E162C /* acTaylor.jpg in Resources */,
+				EDDFE9661D4EB4D700B973DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26AA70BA9829142B0DDBD982 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogS3WithSDK/Pods-BlogS3WithSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FEA48B42E7C1444325A406B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E647BF8A836090C72307DE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogS3WithSDK/Pods-BlogS3WithSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDDFE9591D4EB4D700B973DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDFE9631D4EB4D700B973DD /* ViewController.swift in Sources */,
+				EDDFE9611D4EB4D700B973DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EDDFE9641D4EB4D700B973DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDFE9651D4EB4D700B973DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDDFE9691D4EB4D700B973DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDFE96A1D4EB4D700B973DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDDFE96D1D4EB4D700B973DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EDDFE96E1D4EB4D700B973DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDDFE9701D4EB4D700B973DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB04363B71D971A1B875CDF /* Pods-BlogS3WithSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlogS3WithSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alistaircooper.BlogS3WithSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDDFE9711D4EB4D700B973DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC31BBBFB78CA30D668E0B5E /* Pods-BlogS3WithSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlogS3WithSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alistaircooper.BlogS3WithSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDDFE9581D4EB4D600B973DD /* Build configuration list for PBXProject "BlogS3WithSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDFE96D1D4EB4D700B973DD /* Debug */,
+				EDDFE96E1D4EB4D700B973DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDDFE96F1D4EB4D700B973DD /* Build configuration list for PBXNativeTarget "BlogS3WithSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDFE9701D4EB4D700B973DD /* Debug */,
+				EDDFE9711D4EB4D700B973DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDDFE9551D4EB4D600B973DD /* Project object */;
+}
