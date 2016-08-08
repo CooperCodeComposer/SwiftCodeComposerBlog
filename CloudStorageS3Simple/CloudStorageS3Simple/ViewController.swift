@@ -34,7 +34,7 @@ class ViewController: UIViewController {
                 
             } else {
                 // update the UI on the main queue
-                dispatch_async(dispatch_get_main_queue()) {
+                dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                     self.imageView!.image = UIImage(data: data!)
                     self.imageView!.contentMode = UIViewContentMode.ScaleAspectFit
                     self.view.addSubview(self.imageView!)
